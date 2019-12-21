@@ -1,0 +1,27 @@
+.header {
+    background: $dark-blue;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size 0;
+}
+.header__links {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header__title {
+    color: white;
+    text-decoration: none;
+    h1 {
+        margin: 0;
+    }
+}
+.header__subtitle {
+    color: white;
+    text-decoration: none;
+    margin: $s-size;
+    font-weight: bold;
+}
