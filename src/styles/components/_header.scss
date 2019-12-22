@@ -1,8 +1,10 @@
 .header {
-    background: $dark-blue;
+    background: $off-white;
+    box-shadow: 0px 2px 8px;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .header-container {
@@ -16,15 +18,17 @@
     justify-content: space-between;
 }
 .header__title {
-    color: white;
     text-decoration: none;
     h1 {
         margin: 0;
     }
 }
 .header__subtitle {
-    color: white;
     text-decoration: none;
     margin: $s-size;
     font-weight: bold;
+}
+
+.header__subtitle:visited {
+    color: $dark-grey;
 }

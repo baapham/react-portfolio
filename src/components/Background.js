@@ -3,9 +3,12 @@ import Particles from 'react-particles-js';
 
 const particleParam = {
   particles: {
+    number: {
+      value: 80
+    },
     line_linked: {
       number: {
-        value: 100,
+        value: 50,
         density: {
           enable: true,
           value_area: 800
@@ -24,23 +27,36 @@ const particleParam = {
         },
         onclick: {
             enable: true,
-            mode: 'repulse'
+            mode: 'push'
         }
     }
   }
 }
 
 class Background extends React.Component {
-  render() {
-      return (
-      <div className="particle-container">
-        <h1 className="particle-title">Alex Pham</h1>
-        <Particles
-            className="particle-background"
-            params={particleParam}
-        />  
-      </div>)
-  } 
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentScrollHeight: 0
+        }
+    }
+    componentDidMount () {      
+        window.onscroll = () => {
+            this.setState({currentScrollHeight: window.scrollY})
+        }
+    }
+    render() {
+        return (
+        <div className="particle-container">
+          <div className="particle-content">
+              <h1 className="particle-title">Alex Pham</h1>
+          </div>
+          <Particles
+              className="particle-background"
+              params={particleParam}
+          />  
+        </div>)
+    } 
 }
 
 export default Background;
