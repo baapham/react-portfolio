@@ -1,0 +1,19 @@
+.particle-background {
+    background-color: $dark-blue;
+    height: 100vh;
+    position: relative;
+}
+
+.particle-title {
+    color: $off-white;
+    font-size: $xl-size;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.particle-title:hover {
+    cursor: default;
+}

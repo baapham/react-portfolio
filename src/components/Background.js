@@ -1,65 +1,46 @@
 import React from 'react';
 import Particles from 'react-particles-js';
- 
-class Background extends React.Component {
-  
-    render(){
-        return (
-            <Particles
-        params={{
-          "particles": {
-              "number": {
-                  "value": 160,
-                  "density": {
-                      "enable": false
-                  }
-              },
-              "size": {
-                  "value": 3,
-                  "random": true,
-                  "anim": {
-                      "speed": 4,
-                      "size_min": 0.3
-                  }
-              },
-              "line_linked": {
-                  "enable": false
-              },
-              "move": {
-                  "random": true,
-                  "speed": 1,
-                  "direction": "top",
-                  "out_mode": "out"
-              }
-          },
-          "interactivity": {
-              "events": {
-                  "onhover": {
-                      "enable": true,
-                      "mode": "bubble"
-                  },
-                  "onclick": {
-                      "enable": true,
-                      "mode": "repulse"
-                  }
-              },
-              "modes": {
-                  "bubble": {
-                      "distance": 250,
-                      "duration": 2,
-                      "size": 0,
-                      "opacity": 0
-                  },
-                  "repulse": {
-                      "distance": 400,
-                      "duration": 4
-                  }
-              }
-          }
-      }} />
-        );
-    };
- 
+
+const particleParam = {
+  particles: {
+    line_linked: {
+      number: {
+        value: 100,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      size: {
+        value: 20
+      },
+    }
+  },
+  interactivity: {
+    events: {
+        onhover: {
+            enable: true,
+            mode: 'grab'   
+        },
+        onclick: {
+            enable: true,
+            mode: 'repulse'
+        }
+    }
+  }
 }
- 
+
+class Background extends React.Component {
+  render() {
+      return (
+      <div className="particle-container">
+        <h1 className="particle-title">Alex Pham</h1>
+        <Particles
+            className="particle-background"
+            params={particleParam}
+        />  
+      </div>)
+  } 
+}
+
 export default Background;

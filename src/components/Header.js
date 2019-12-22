@@ -6,7 +6,7 @@ const Header = () => (
         <div className="content-container">
             <div className = "header-container">
                 <div className="header__title">
-                    <h1>Alex Pham</h1>
+                    <h1>AP</h1>
                 </div>
                 <div className="header__links">
                     <a href="#about" className="header__subtitle">About</a>
