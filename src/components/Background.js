@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 const particleParam = {
   particles: {
     number: {
-      value: 80
+      value: 60
     },
     line_linked: {
       number: {
@@ -37,7 +37,8 @@ class Background extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentScrollHeight: 0
+            currentScrollHeight: 0,
+
         }
     }
     componentDidMount () {      

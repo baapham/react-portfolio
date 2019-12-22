@@ -27,8 +27,10 @@
     text-decoration: none;
     margin: $s-size;
     font-weight: bold;
-}
-
-.header__subtitle:visited {
-    color: $dark-grey;
+    &:visited {
+        color: $dark-grey;
+    }
+    &:link {
+        color: $dark-grey;
+    }
 }
