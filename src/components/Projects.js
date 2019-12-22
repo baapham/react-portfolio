@@ -2,8 +2,16 @@ import React from 'react';
 import Project from './Project';
 const Projects = (props) => (
     <div id={props.id}>
-        <h2>This is the Projects Section</h2>
-        <Project />
+        <div className="content-container">
+            <h2>Projects
+                
+            </h2>
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+        </div>
     </div>
 );
 
