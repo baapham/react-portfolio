@@ -1,8 +1,19 @@
-.header {
+.header-top {
+    background: transparentize($off-white, $amount: 1);
+    position: fixed;
+    color: $off-white;
+    top: 0;
+    transition: background 1s, color 1s;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-moving {
     background: $off-white;
     box-shadow: 0px 2px 8px;
     position: fixed;
     top: 0;
+    transition: background 1s, color 1s, box-shadow 1s;
     width: 100%;
     z-index: 10;
 }
@@ -23,7 +34,7 @@
         margin: 0;
     }
 }
-.header__subtitle {
+.header-subtitle-moving {
     text-decoration: none;
     margin: $s-size;
     font-weight: bold;
@@ -33,4 +44,17 @@
     &:link {
         color: $dark-grey;
     }
+    transition: background 1s, color 1s;
+}
+.header-subtitle-top {
+    text-decoration: none;
+    margin: $s-size;
+    font-weight: bold;
+    &:visited {
+        color: $off-white;
+    }
+    &:link {
+        color: $off-white;
+    }
+    transition: background 1s, color 1s;
 }

@@ -1,20 +1,36 @@
 import React from 'react';
 
 
-const Header = () => (
-    <header className="header">
-        <div className="content-container">
-            <div className = "header-container">
-                <div className="header__title">
-                    <h1>AP</h1>
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentScrollHeight: 0
+        }
+    }
+    componentDidMount () {      
+        window.onscroll = () => {
+            this.setState({currentScrollHeight: window.scrollY})
+        }
+    }
+    
+    render() {
+        return (
+            <header className={this.state.currentScrollHeight > 100 ? "header-moving" : "header-top"}>
+                <div className="content-container">
+                    <div className = "header-container">
+                        <div className="header__title">
+                            <h1>AP</h1>
+                        </div>
+                        <div className="header__links">
+                            <a href="#about" className={this.state.currentScrollHeight > 100 ? "header-subtitle-moving" : "header-subtitle-top"}>About</a>
+                            <a href="#projects" className={this.state.currentScrollHeight > 100 ? "header-subtitle-moving" : "header-subtitle-top"}>Projects</a>
+                        </div>
+                    </div>
                 </div>
-                <div className="header__links">
-                    <a href="#about" className="header__subtitle">About</a>
-                    <a href="#projects" className="header__subtitle">Projects</a>
-                </div>
-            </div>
-        </div>
-    </header>
-);
+            </header>
+        );
+    }
+} 
 
 export default Header;

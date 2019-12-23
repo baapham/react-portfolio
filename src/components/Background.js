@@ -34,18 +34,6 @@ const particleParam = {
 }
 
 class Background extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentScrollHeight: 0,
-
-        }
-    }
-    componentDidMount () {      
-        window.onscroll = () => {
-            this.setState({currentScrollHeight: window.scrollY})
-        }
-    }
     render() {
         return (
         <div className="particle-container">
