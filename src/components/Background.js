@@ -34,17 +34,21 @@ const particleParam = {
 }
 
 class Background extends React.Component {
+    workClick = () => {
+        console.log("here");
+    };
+
     render() {
         return (
-        <div className="particle-container">
-          <div className="particle-content">
-              <h1 className="particle-title">Alex Pham</h1>
+            <div className="particle-container">
+               <h1 className="particle-title">Alex Pham</h1>
+               <button className="particle-button" onClick={this.workClick}>View my work</button>
+            <Particles
+                className="particle-background"
+                params={particleParam}
+            />  
           </div>
-          <Particles
-              className="particle-background"
-              params={particleParam}
-          />  
-        </div>)
+        );
     } 
 }
 

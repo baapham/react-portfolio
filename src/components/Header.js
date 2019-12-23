@@ -19,8 +19,8 @@ class Header extends React.Component {
             <header className={this.state.currentScrollHeight > 100 ? "header-moving" : "header-top"}>
                 <div className="content-container">
                     <div className = "header-container">
-                        <div className="header__title">
-                            <h1>AP</h1>
+                        <div className={this.state.currentScrollHeight > 100 ? "header-title-moving" : "header-title-top"}>
+                            <h1><a href="#">AP</a></h1>
                         </div>
                         <div className="header__links">
                             <a href="#about" className={this.state.currentScrollHeight > 100 ? "header-subtitle-moving" : "header-subtitle-top"}>About</a>
