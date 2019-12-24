@@ -9,26 +9,10 @@
     color: $off-white;
     font-size: $xl-size;
     left: 50%;
-    padding: 40px;
+    padding: 0;
     position: absolute;
     text-align: center;
     top: 40%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.particle-button {
-    background-color: $blue; 
-    border: 2px solid $blue;
-    border-radius: 12px;
-    cursor: pointer;
-    color: $off-white; 
-    left: 50%;
-    padding: 8px 16px;
-    position: absolute;
-    text-align: center;
-    top: 60%;
-    text-decoration: none;
     transform: translate(-50%, -50%);
     z-index: 1;
 }

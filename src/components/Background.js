@@ -35,7 +35,9 @@ const particleParam = {
 
 class Background extends React.Component {
     workClick = () => {
-        console.log("here");
+        const aboutHeight = document.getElementById('about').offsetTop;
+        const headerHeight = document.getElementById('header').offsetHeight;
+        window.scrollTo(0, aboutHeight - headerHeight);
     };
 
     render() {

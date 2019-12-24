@@ -13,18 +13,32 @@ class Header extends React.Component {
             this.setState({currentScrollHeight: window.scrollY})
         }
     }
-    
+
+    handleScrollTop = () => {
+        window.scrollTo(0, 0);
+    };
+
+    handleScrollAbout = () => {
+        const aboutHeight = document.getElementById('about').offsetTop;
+        const headerHeight = document.getElementById('header').offsetHeight;
+        window.scrollTo(0, aboutHeight - headerHeight);
+    };
+
+    handleScrollProjects = () => {
+        const projectHeight = document.getElementById('projects').offsetTop;
+        const headerHeight = document.getElementById('header').offsetHeight;
+        window.scrollTo(0, projectHeight - headerHeight);
+    };
+
     render() {
         return (
-            <header className={this.state.currentScrollHeight > 100 ? "header-moving" : "header-top"}>
+            <header id="header" className={this.state.currentScrollHeight > 100 ? "header-moving" : "header-top"}>
                 <div className="content-container">
                     <div className = "header-container">
-                        <div className={this.state.currentScrollHeight > 100 ? "header-title-moving" : "header-title-top"}>
-                            <h1><a href="#">AP</a></h1>
-                        </div>
+                        <button onClick={this.handleScrollTop} className={this.state.currentScrollHeight > 100 ? "button-logo-moving" : "button-logo-top"}>AP</button>
                         <div className="header__links">
-                            <a href="#about" className={this.state.currentScrollHeight > 100 ? "header-subtitle-moving" : "header-subtitle-top"}>About</a>
-                            <a href="#projects" className={this.state.currentScrollHeight > 100 ? "header-subtitle-moving" : "header-subtitle-top"}>Projects</a>
+                            <button onClick={this.handleScrollAbout} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>About</button>
+                            <button onClick={this.handleScrollProjects} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>Projects</button>
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,6 @@ class App extends React.Component {
             <div>
                 <Header />
                 <Background />
-                
                 <About id="about" />
                 <Projects id="projects" />
             </div>

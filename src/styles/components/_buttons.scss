@@ -1,0 +1,77 @@
+.button-logo-top {
+    background-color: rgba(255,255,255,.1);
+    border-style: solid;
+    border-width: 2px;
+    color: $off-white;
+    cursor: pointer;
+    font-size: $l-size;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    transition: background-color 1s, border 1s, color 1s;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.button-logo-moving {
+    background-color: rgba(255,255,255,.1);
+    border-color: $dark-grey;    
+    border-style: solid;
+    border-width: 2px;
+    color: $dark-grey;
+    cursor: pointer;
+    font-size: $l-size;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    transition: background-color 1s, border 1s, color 1s;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.button-subtitle-top {
+    background-color: transparent;
+    border-style: none;
+    color: $off-white;
+    cursor: pointer;
+    font-size: $m-size;
+    font-weight: bold;
+    margin: 0;
+    transition: color 1s;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.button-subtitle-moving {
+    background-color: transparent;
+    border-style: none;
+    color: $dark-grey;
+    cursor: pointer;
+    font-size: $m-size;
+    font-weight: bold;
+    margin: 0;
+    transition: color 1s;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.particle-button {
+    background-color: $blue; 
+    border: 2px solid $blue;
+    border-radius: 12px;
+    cursor: pointer;
+    color: $off-white; 
+    left: 50%;
+    padding: 8px 16px;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    &:focus {
+        outline: 0;
+    }
+}
