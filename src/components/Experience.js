@@ -2,8 +2,8 @@ import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>My Work Experience</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}>B</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>My Past Work Experience (Click Me!)</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><img src="https://www.mastercard.com.au/content/mccom-admin/en-au-admin/referenced-content-admin/referenced-content-placeholder/mastercard-newsroom1/_jcr_content/contentpar/related_content_item/image.adaptive.767.high.jpg/1547105578628.jpg"></img></animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>C</animated.div>,
 ]
 
