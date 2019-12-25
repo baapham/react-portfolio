@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>A</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>My Work Experience</animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}>B</animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>C</animated.div>,
 ]

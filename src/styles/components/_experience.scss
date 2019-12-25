@@ -1,25 +1,27 @@
 .simple-trans-main{
   div {
-    cursor: pointer;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: $l-size;
     font-weight: 800;
-    font-size: $xl-size;
-    will-change: transform, opacity;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
     text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
-    left: 0rem;
+    width: 100%;
+    will-change: transform, opacity;
   }
   
 }
 
-.kVIur {
+.experience-container {
+  margin: 0;
+  padding: 0;
   position: relative;
-  width: 90rem;
-  height: 200px;
+  width: 100%;
+  height: 400px;
   display: grid;
 }

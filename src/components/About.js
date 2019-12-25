@@ -13,11 +13,6 @@ const About = (props) => (
                         <b> Maybe.</b> I tried to make the most out of this habit by crafting an interactive portfolio website that you can fiddle with - play with the background, swing your mouse around,
                         do whatever your heart desires!
                     </p>
-                    {/* <div className="kVIur">
-                        <div>
-                            <Experience />
-                        </div>
-                    </div> */}
                 </div>
                 <h3><i>My Origin Story</i></h3>
                 <p>I was born in <strike>Gotham City</strike> <b>Sydney</b> and was first exposed to computers at an early age. My love of programming only really started
@@ -27,6 +22,11 @@ const About = (props) => (
 
                 <p>After this, in Year 10 I competed in a <b>Python Coding Competition</b> and enjoyed it so much I decided to put my self a few thousand in debt
                 and get a Computer Science degree.</p>
+                <div className="experience-container">
+                    <div>
+                        <Experience />
+                    </div>
+                </div>
             </div>
             
         </div>

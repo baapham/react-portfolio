@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from './Project';
 const Projects = (props) => (
-    <div id={props.id}>
+    <div id={props.id} className="projects">
         <div className="projects-main">
             <div className="content-container">
                 <h2>Projects
