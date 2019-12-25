@@ -1,7 +1,8 @@
 import React from 'react';
+import Experience from './Experience';
 
 const About = (props) => (
-    <div id={props.id}>
+    <div id={props.id} className="about">
         <div className="about-main">
             <div className="content-container">
             <h2>About Me</h2>
@@ -19,9 +20,10 @@ const About = (props) => (
 
             <p>After this, in Year 10 I competed in a <b>Python Coding Competition</b> and enjoyed it so much I decided to put my self a few thousand in debt
             and get a Computer Science degree.</p>
-
+            <Experience />
+            </div>
         </div>
-        </div>
+        
     </div>
 );
 
