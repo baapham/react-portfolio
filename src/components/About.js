@@ -22,6 +22,7 @@ const About = (props) => (
 
                 <p>After this, in Year 10 I competed in a <b>Python Coding Competition</b> and enjoyed it so much I decided to put my self a few thousand in debt
                 and get a Computer Science degree.</p>
+                <h3>Work Experience</h3>
                 <div className="experience-container">
                     <div>
                         <Experience />
