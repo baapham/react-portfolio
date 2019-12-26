@@ -22,11 +22,38 @@ const About = (props) => (
 
                 <p>After this, in Year 10 I competed in a <b>Python Coding Competition</b> and enjoyed it so much I decided to put my self a few thousand in debt
                 and get a Computer Science degree.</p>
-                <h3>Work Experience</h3>
+                <h3><i>Work Experience</i></h3>
                 <div className="experience-container">
-                    <Experience />
-                    <Experience />
+                    <div className="experience-item">
+                        <a rel="noopener noreferrer" href="https://www.mastercard.com.au/" target="_blank"><img src={require("../images/mastercard.svg")} alt="mastercard" /></a>
+                    </div>
+                    <div className="experience-item">
+                        <a rel="noopener noreferrer" href="https://www.unsw.edu.au/" target="_blank"><img src={require("../images/unsw.svg")} alt="UNSW" /></a>
+                    </div>
+                    <div className="experience-item">
+                        <a rel="noopener noreferrer" href="https://www.menith.com/" target="_blank"><img src={require("../images/menith.svg")} alt="menith" /></a>
+                    </div>
+                    <div className="experience-item">
+                        <a rel="noopener noreferrer" href="https://yabonza.com/" target="_blank"><img src={require("../images/yabonza.svg")} alt="yabonza" /></a>
+                    </div>
                 </div>
+                {/* <div className="experience-container">
+                    <div className="experience-item">
+                        <Experience />
+                    </div>
+                    <div className="experience-item">
+                        <Experience />
+                    </div>
+                    <div className="experience-item">
+                        <Experience />
+                    </div>
+                    <div className="experience-item">
+                        <Experience />
+                    </div>
+                    <div className="experience-item">
+                        <Experience />
+                    </div>
+                </div> */}
             </div>
             
         </div>

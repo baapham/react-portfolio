@@ -3,13 +3,12 @@ import { useTransition, animated } from 'react-spring'
 
 const pages = [
   ({ style }) => <animated.div style={{ ...style }}>Click Me!</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><img src={require('../images/mastercard.png')} alt="mastercard" /></animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>UNSW C</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><img src={require('../images/mastercard.svg')} alt="mastercard" /></animated.div>,
 ]
 
 export default function Experience() {
   const [index, set] = useState(0)
-  const onClick = useCallback(() => set(state => (state + 1) % 3), [])
+  const onClick = useCallback(() => set(state => (state + 1) % 2), [])
   const transitions = useTransition(index, p => p, {
     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
