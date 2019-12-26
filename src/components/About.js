@@ -28,13 +28,13 @@ const About = (props) => (
                         <a rel="noopener noreferrer" href="https://www.mastercard.com.au/" target="_blank"><img src={require("../images/mastercard.svg")} alt="mastercard" /></a>
                     </div>
                     <div className="experience-item">
-                        <a rel="noopener noreferrer" href="https://www.unsw.edu.au/" target="_blank"><img src={require("../images/unsw-logo.svg")} alt="UNSW" /></a>
+                        <a rel="noopener noreferrer" href="https://www.unsw.edu.au/" target="_blank"><img src={require("../images/unsw.svg")} alt="UNSW" /></a>
                     </div>
                     <div className="experience-item">
                         <a rel="noopener noreferrer" href="https://www.menith.com/" target="_blank"><img src={require("../images/menith.svg")} alt="menith" /></a>
                     </div>
                     <div className="experience-item">
-                        <a rel="noopener noreferrer" href="https://yabonza.com/" target="_blank"><img src={require("../images/yabonza.svg")} alt="yabonza" /></a>
+                        <a rel="noopener noreferrer" href="https://yabonza.com/" target="_blank"><img src={require("../images/yabonza-logo.svg")} alt="yabonza" /></a>
                     </div>
                 </div>
                 {/* <div className="experience-container">
