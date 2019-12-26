@@ -20,6 +20,7 @@
 
 .experience-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   border-style: solid;
   height: 100px;
@@ -27,4 +28,11 @@
   padding: 0;
   position: relative;
   width: 50%;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .experience-container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
