@@ -2,9 +2,9 @@ import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: '#1c88bf' }}>Click Me!</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><img src="https://www.mastercard.com.au/content/mccom-admin/en-au-admin/referenced-content-admin/referenced-content-placeholder/mastercard-newsroom1/_jcr_content/contentpar/related_content_item/image.adaptive.767.high.jpg/1547105578628.jpg"></img></animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>C</animated.div>,
+  ({ style }) => <animated.div style={{ ...style }}>Click Me!</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><img src={require('../images/mastercard.png')} alt="mastercard" /></animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>UNSW C</animated.div>,
 ]
 
 export default function Experience() {

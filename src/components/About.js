@@ -24,9 +24,8 @@ const About = (props) => (
                 and get a Computer Science degree.</p>
                 <h3>Work Experience</h3>
                 <div className="experience-container">
-                    <div>
-                        <Experience />
-                    </div>
+                    <Experience />
+                    <Experience />
                 </div>
             </div>
             
