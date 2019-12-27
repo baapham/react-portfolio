@@ -1,4 +1,5 @@
 import React from 'react';
+import SkillsParallax from './SkillsParallax';
 
 class Skills extends React.Component {
     render() {
@@ -6,8 +7,9 @@ class Skills extends React.Component {
             <div className="skills">
                 <div className="content-container">
                     <div className="skills-content">
-                        <div className="section-heading--skills">
+                        <div className="section-heading">
                             <h1>Skills</h1>
+                            {/* <SkillsParallax /> */}
                         </div>
                     </div>
                 </div>

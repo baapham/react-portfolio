@@ -4,8 +4,9 @@ const Projects = (props) => (
     <div id={props.id} className="projects">
         <div className="projects-main">
             <div className="content-container">
-                <h2>Projects
-                </h2>
+                <div className="section-heading">
+                    <h1>Projects</h1>
+                </div>
                 <Project />
                 <Project />
                 <Project />

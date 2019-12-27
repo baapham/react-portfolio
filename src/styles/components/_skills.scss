@@ -1,11 +1,8 @@
 .skills {
     color: $off-white;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .skills-content {
     padding: 2rem 5rem 2rem 5rem;
-    h2 {
-        text-underline-offset: auto;
-    }
 }
