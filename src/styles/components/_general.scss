@@ -1,0 +1,17 @@
+.section-heading {
+    display: flex;
+    justify-content: center;
+    h1 {
+        display: inline-block;
+        border-bottom: 2px solid $blue;
+    }
+}
+
+.section-heading--skills {
+    display: flex;
+    justify-content: center;
+    h1 {
+        display: inline-block;
+        border-bottom: 2px solid $dark-grey;
+    }
+}

@@ -5,7 +5,11 @@ class Skills extends React.Component {
         return (
             <div className="skills">
                 <div className="content-container">
-                    <h1>Skills</h1>
+                    <div className="skills-content">
+                        <div className="section-heading--skills">
+                            <h1>Skills</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

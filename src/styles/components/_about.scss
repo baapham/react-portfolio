@@ -1,9 +1,14 @@
-.about { 
-    // height: 100vh;
+.about {
+    background-color: $off-white;
+}
+.about-all { 
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+    background-color: lighten($off-white, 50);
+    padding: 2rem 5rem 2rem 5rem;
 }
 
 .about-main {
-    margin-top: 100px;
+    padding: 5rem 0 5rem 0;
 }
 
 .about-content {
