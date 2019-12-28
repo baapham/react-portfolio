@@ -1,19 +1,21 @@
 .parallax-scene {
-    height: 100%;
+    height: 100;
     border: 2px solid red;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .layer {
     list-style: none;
     height: 100%;
-    width: 100%;
+    width: 50%;
     padding: 0;
     margin: 0;
 }
 
 .cloud-position-1 {
+    list-style: none;
     display: block;
     padding: 0;
     margin: 0;
@@ -23,6 +25,7 @@
 }
 
 .cloud-position-2 {
+    list-style: none;
     display: block;
     padding: 0;
     margin: 0;
@@ -52,10 +55,18 @@
 
 	height: 120px;
 	position: relative;
-    width: 350px;
+    max-width: 85%;
     // left: 500px;
     text-align: center;
     color: $dark-grey;
+}
+
+.cloud-text {
+    color: $dark-grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cloud:after, .cloud:before {
