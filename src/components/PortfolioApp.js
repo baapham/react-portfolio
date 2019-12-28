@@ -4,6 +4,7 @@ import About from './About';
 import Projects from './Projects';
 import Background from './Background';
 import Skills from './Skills';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends React.Component {
   render() {

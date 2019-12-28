@@ -1,0 +1,88 @@
+.scroll {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    margin-left: -7rem;
+    width: 14rem;
+    height: auto;
+    font-family: 'futura-pt', Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #405d86;
+
+    svg {
+        margin: 0 2rem;
+    }
+
+    .arrow-1 {
+        position: relative;
+        z-index: 1;
+    }
+    .arrow-2 {
+        margin-top: -120%;
+    }
+}
+
+.word {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.letter {
+    position: relative;
+    margin: 0 1.8rem;
+    &:first-of-type {
+        margin-right: -2rem; // P/A kerning
+    }
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        // background-color: rgba(salmon, 0.2);
+    }
+}
+
+.fill-1 {
+    fill: url(#gradient-2); // #405D86;
+}
+
+.fill-2 {
+    fill: url(#gradient-6);
+}
+
+.fill-3 {
+    fill: url(#gradient-3); // #ED6088;
+}
+
+.fill-4 {
+    fill: url(#gradient-1); // #6ED0DD
+}
+
+.fill-5 {
+    fill: url(#gradient-4);
+}
+
+.fill-6 {
+    fill: url(#gradient-5);
+}
+
+.hidden {
+    position: absolute;
+    top: -1000rem;
+    left: -1000rem;
+    width: 0;
+    height: 0;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const About = (props) => (
-    <div id={props.id} className="about">
-        <div className="about-main">
+    <div  className="about">
+        <div className="about-main" id={props.id}>
             <div className="content-container">
                 <div className="about-all">
-                    <div className="section-heading--about">
+                    <div className="section-heading--about" >
                         <h1>About Me</h1>
                     </div>
                     <h3><i>Hi, I'm Alex</i></h3>

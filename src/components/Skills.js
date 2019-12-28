@@ -9,8 +9,8 @@ class Skills extends React.Component {
                     <div className="skills-content">
                         <div className="section-heading">
                             <h1>Skills</h1>
-                            {/* <SkillsParallax /> */}
                         </div>
+                        <SkillsParallax />
                     </div>
                 </div>
             </div>
