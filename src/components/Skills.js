@@ -6,12 +6,13 @@ class Skills extends React.Component {
         return (
             <div className="skills">
                 <div className="content-container">
-                    <div className="skills-content">
+                    {/* <div className="skills-content"> */}
                         <div className="section-heading">
                             <h1>Skills</h1>
                         </div>
                         <SkillsParallax />
-                    </div>
+                        
+                    {/* </div> */}
                 </div>
             </div>
         )

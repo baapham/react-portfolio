@@ -4,13 +4,26 @@ class SkillsParallax extends React.Component {
     componentDidMount() {
         const scene = document.getElementById('scene');
         const parallaxInstance = new Parallax(scene);
+        // const scene2 = document.getElementById('scene2');
+        // const parallaxInstance2 = new Parallax(scene2);
     }
     render() {
         return(
-            <div id="scene" data-relative-input="true" data-clip-relative-input="false">
-                <div data-depth="0.2">My first Layer!</div>
-                <div data-depth="1">My second Layer!</div>
-            </div>
+            <ul id="scene" className="parallax-scene">
+                <li className="layer" data-depth="0.15">
+                    <ul className="cloud-position-1">
+                        <li className="cloud x1"></li>
+                    </ul>
+                    
+                </li>
+                <li className="layer" data-depth="1">
+                    <ul className="cloud-position-2">
+                        <li className="cloud"></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+            
         )
     }
 }
