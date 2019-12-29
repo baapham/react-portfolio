@@ -13,18 +13,15 @@ class SkillsParallax extends React.Component {
                 <li className="layer" data-depth="0.15">
                     <ul className="cloud-position-1">
                         {/* <li className="cloud x1"></li> */}
-                        <img src={require('../images/cloud.svg')} className="x1"></img>
-                        <p className="cloud-text">Hello</p>
+                        <img src={require('../images/cloud-databases.svg')} className="x1"></img>
                     </ul>
                     
                 </li>
                 <li className="layer" data-depth="1">
                     <ul className="cloud-position-2">
                         {/* <li className="cloud"></li> */}
-                        <img src={require('../images/cloud.svg')}></img>
-                        <p className="cloud-text">Hello 2</p>
+                        <img src={require('../images/cloud-services.svg')}></img>
                     </ul>
-                    
                 </li>
             </ul>
             
