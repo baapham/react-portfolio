@@ -7,7 +7,7 @@ class SkillsParallax extends React.Component {
     }
     render() {
         return(
-            <div id="scene" className="parallax-scene" data-invert-y="false" data-invert-x="false" data-relative-input="true">
+            <div id="scene" className="parallax-scene" data-calibrate-x="true" data-calibrate-y="true">
                 <div className="layer" data-depth="0.8">
                     <div className="cloud-position-1">
                         <img src={require('../images/cloud-frontend.svg')} className="cloud x1 cloud-shadow" alt="frontend"></img>

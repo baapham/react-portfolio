@@ -1,16 +1,39 @@
 import React from 'react';
-
+import { store } from 'react-notifications-component';
+import 'react-notifications-component/dist/theme.css';
+import 'animate.css';
 
 class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentScrollHeight: 0
+            currentScrollHeight: 0,
+            warning: false
         }
     }
     componentDidMount () {      
         window.onscroll = () => {
             this.setState({currentScrollHeight: window.scrollY})
+            let currHeight = this.state.currentScrollHeight;
+            const skillsSection = document.getElementById('skills');
+            let belowTop = (currHeight > skillsSection.offsetTop);
+            let aboveBot =(currHeight < (skillsSection.offsetHeight + skillsSection.offsetTop)); 
+            if (belowTop && aboveBot && !this.state.warning) {
+                this.setState({ warning: true})
+                store.addNotification({
+                    message: 'Move your mouse or tilt your phone (except iPhones)!',
+                    type: 'info',                         // 'default', 'success', 'info', 'warning'
+                    container: 'top-center',                // where to position the notifications
+                    animationIn: ["animated", "flipInX"],     // animate.css classes that's applied
+                    animationOut: ["animated", "flipOutX"],   // animate.css classes that's applied
+                    dismiss: {
+                      duration: 5000 
+                    }
+                  })
+            }
+            else if (this.state.warning && (!belowTop || !aboveBot)) {
+                this.setState({ warning: false})
+            }
         }
     }
 
