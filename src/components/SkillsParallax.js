@@ -10,23 +10,23 @@ class SkillsParallax extends React.Component {
             <div id="scene" className="parallax-scene" data-calibrate-x="true" data-calibrate-y="true">
                 <div className="layer" data-depth="0.8">
                     <div className="cloud-position-1">
-                        <img src={require('../images/cloud-frontend.svg')} className="cloud x1 cloud-shadow" alt="frontend"></img>
+                        <img src={require('../images/cloud-backend.svg')} className="cloud x1 cloud-shadow" alt="frontend"></img>
                     </div>
                 </div>
                 <div className="layer" data-depth="0.4">
                     <div className="cloud-position-3">
-                        <img src={require('../images/cloud-databases.svg')} className="cloud x3 cloud-shadow" alt="databases"></img>
+                        <img src={require('../images/cloud-services.svg')} className="cloud x3 cloud-shadow" alt="databases"></img>
                     </div>
                     
                 </div>
                 <div className="layer" data-depth="0.6">
                     <div className="cloud-position-4">
-                        <img src={require('../images/cloud-backend.svg')} className="cloud x2 cloud-shadow" alt="backend"></img>
+                        <img src={require('../images/cloud-databases.svg')} className="cloud x2 cloud-shadow" alt="backend"></img>
                     </div>
                 </div>
                 <div className="layer" data-depth="1">
                     <div className="cloud-position-2">
-                        <img src={require('../images/cloud-services.svg')} className="cloud cloud-shadow" alt="services"></img>
+                        <img src={require('../images/cloud-frontend.svg')} className="cloud cloud-shadow" alt="services"></img>
                     </div>
                 </div>
             </div>
