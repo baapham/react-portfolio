@@ -17,7 +17,7 @@ class Header extends React.Component {
             let currHeight = this.state.currentScrollHeight;
             const skillsSection = document.getElementById('skills');
             let belowTop = (currHeight > skillsSection.offsetTop);
-            let aboveBot =(currHeight < (skillsSection.offsetHeight/2 + skillsSection.offsetTop)); 
+            let aboveBot =(currHeight < (skillsSection.offsetHeight + skillsSection.offsetTop)); 
             if (belowTop && aboveBot && !this.state.warning) {
                 this.setState({ warning: true})
                 store.addNotification({
