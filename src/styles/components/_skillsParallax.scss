@@ -1,27 +1,36 @@
 .parallax-scene {
-    height: 100;
-    border: 2px solid red;
+    min-height: 100vh;
+    // border: 2px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+	// justify-content: space-between;
+	padding: 0;
+	margin: 0;
 }
 
 .layer {
     list-style: none;
     height: 100%;
-    width: 50%;
+    // width: 50%;
     padding: 0;
     margin: 0;
 }
 
+.cloud {
+	max-width: 100%;
+    height: auto;
+    width: auto\9; 
+}
+
 .cloud-position-1 {
     list-style: none;
-    display: block;
+    // display: block;
     padding: 0;
     margin: 0;
-    left: 50%;
+    // left: 50%;
     position: relative;
-    top: 80%;
+	// top: 80%;
+	z-index: 5;
 }
 
 .cloud-position-2 {
@@ -29,91 +38,69 @@
     display: block;
     padding: 0;
     margin: 0;
-    left: 20%;
+    left: 70%;
     position: relative;
-    top: 80%;
+	top: 25%;
+	transform: translate(-70%, 0%);
 }
-// cloud art used from https://codepen.io/Mark_Bowley/pen/xEbuI
 
-// .cloud {
-// 	background: #fff;
-// 	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
-// 	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
-// 	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-// 	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-// 	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-// 	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-// 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+.cloud-position-3 {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    left: 80%;
+    position: relative;
+	top: 70%;
+	transform: translate(-80%, 0%);
+}
+
+.cloud-position-4 {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    // left: 20%;
+    position: relative;
+	top: 50%;
 	
-// 	-webkit-border-radius: 100px;
-// 	-moz-border-radius: 100px;
-// 	border-radius: 100px;
-	
-// 	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-// 	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-// 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-
-// 	height: 120px;
-// 	position: relative;
-//     max-width: 85%;
-//     // left: 500px;
-//     text-align: center;
-//     color: $dark-grey;
-// }
-
-// .cloud:after, .cloud:before {
-//     background: #fff;
-// 	content: '';
-// 	position: absolute;
-// 	z-indeX: -1;
-// }
-
-// .cloud:after {
-// 	-webkit-border-radius: 100px;
-// 	-moz-border-radius: 100px;
-// 	border-radius: 100px;
-// 	height: 100px;
-// 	left: 50px;
-// 	top: -50px;
-// 	width: 100px;
-// }
-
-// .cloud:before {
-// 	-webkit-border-radius: 200px;
-// 	-moz-border-radius: 200px;
-// 	border-radius: 200px;
-// 	width: 180px;
-// 	height: 180px;
-// 	right: 50px;
-// 	top: -90px;
-// }
+}
 
 .x1 {
-	-webkit-transform: scale(0.65);
-	-moz-transform: scale(0.65);
-	transform: scale(0.65);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 .x2 {
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 .x3 {
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	transform: scale(0.5);
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
 }
 
 .x4 {
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	transform: scale(0.95);
 }
 
 .x5 {
 	-webkit-transform: scale(0.55);
 	-moz-transform: scale(0.55);
 	transform: scale(0.55);
+}
+
+@media(min-width: $desktop-breakpoint) {
+	.cloud-position-3 {
+		transform: translate(0%, 0%);
+	}
+	.cloud-position-2 {
+		transform: translate(0%, 0%);
+	}
 }
