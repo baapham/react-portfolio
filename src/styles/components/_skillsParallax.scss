@@ -1,67 +1,56 @@
 .parallax-scene {
-    min-height: 100vh;
-    display: flex;
+	display: flex;
     flex-direction: row;
 	justify-content: space-between;
-	padding: 0;
 	margin: 0;
+    min-height: 100vh;
+	padding: 0;
 }
 
 .layer {
     height: 100%;
-    width: 50%;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 50%;
 }
 
 .cloud {
-	max-width: 100%;
     height: auto;
+	max-width: 100%;
     width: auto\9; 
 }
 
 .cloud-position-1 {
+	left: $l-size;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     position: relative;
 	top: $l-size;
-	left: $l-size;
 	transform: scale(2);
 }
 
 .cloud-position-2 {
-    list-style: none;
-    // display: block;
-    padding: 0;
-    margin: 0;
     left: 100%;
+	margin: 0;
+    padding: 0;
     position: relative;
 	top: 30%;
-	// transform: translate(-70%, 0%);
-	// width: 80%;
 	transform: scale(2);
 }
 
 .cloud-position-3 {
-    list-style: none;
-    // display: block;
-    padding: 0;
-    margin: 0;
     left: 80%;
+	margin: 0;
+    padding: 0;
     position: relative;
 	top: 70%;
-	// transform: translate(-80%, 0%);
-	// width: 60%;
 	transform: scale(2);
 }
 
 .cloud-position-4 {
-    list-style: none;
-    // display: block;
+	margin: 0;
     padding: 0;
-    margin: 0;
-    // left: 20%;
     position: relative;
 	top: 50%;
 	transform: scale(2);
