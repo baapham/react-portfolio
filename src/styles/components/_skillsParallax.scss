@@ -1,17 +1,15 @@
 .parallax-scene {
     min-height: 100vh;
-    // border: 2px solid red;
     display: flex;
-    flex-direction: column;
-	// justify-content: space-between;
+    flex-direction: row;
+	justify-content: space-between;
 	padding: 0;
 	margin: 0;
 }
 
 .layer {
-    list-style: none;
     height: 100%;
-    // width: 50%;
+    width: 50%;
     padding: 0;
     margin: 0;
 }
@@ -24,46 +22,49 @@
 
 .cloud-position-1 {
     list-style: none;
-    // display: block;
     padding: 0;
     margin: 0;
-    // left: 50%;
     position: relative;
-	// top: 80%;
-	z-index: 5;
+	top: $l-size;
+	left: $l-size;
+	transform: scale(2);
 }
 
 .cloud-position-2 {
     list-style: none;
-    display: block;
+    // display: block;
     padding: 0;
     margin: 0;
-    left: 70%;
+    left: 100%;
     position: relative;
-	top: 25%;
-	transform: translate(-70%, 0%);
+	top: 30%;
+	// transform: translate(-70%, 0%);
+	// width: 80%;
+	transform: scale(2);
 }
 
 .cloud-position-3 {
     list-style: none;
-    display: block;
+    // display: block;
     padding: 0;
     margin: 0;
     left: 80%;
     position: relative;
 	top: 70%;
-	transform: translate(-80%, 0%);
+	// transform: translate(-80%, 0%);
+	// width: 60%;
+	transform: scale(2);
 }
 
 .cloud-position-4 {
     list-style: none;
-    display: block;
+    // display: block;
     padding: 0;
     margin: 0;
     // left: 20%;
     position: relative;
 	top: 50%;
-	
+	transform: scale(2);
 }
 
 .x1 {
@@ -84,23 +85,21 @@
 	transform: scale(0.7);
 }
 
-.x4 {
-	-webkit-transform: scale(0.95);
-	-moz-transform: scale(0.95);
-	transform: scale(0.95);
+.cloud-shadow {
+	-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
-
-.x5 {
-	-webkit-transform: scale(0.55);
-	-moz-transform: scale(0.55);
-	transform: scale(0.55);
-}
-
 @media(min-width: $desktop-breakpoint) {
-	.cloud-position-3 {
-		transform: translate(0%, 0%);
+	.cloud-position-1 {
+		transform: scale(1);
 	}
 	.cloud-position-2 {
-		transform: translate(0%, 0%);
+		transform: scale(1);
+	}
+	.cloud-position-3 {
+		transform: scale(1);
+	}
+	.cloud-position-4 {
+		transform: scale(1);
 	}
 }
