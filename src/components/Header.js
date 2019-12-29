@@ -2,6 +2,7 @@ import React from 'react';
 import { store } from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css';
 import 'animate.css';
+import {isMobile} from 'react-device-detect';
 
 class Header extends React.Component {
     constructor(props) {
@@ -19,13 +20,20 @@ class Header extends React.Component {
             let belowTop = (currHeight > skillsSection.offsetTop);
             let aboveBot =(currHeight < (skillsSection.offsetHeight + skillsSection.offsetTop)); 
             if (belowTop && aboveBot && !this.state.warning) {
-                this.setState({ warning: true})
+                this.setState({ warning: true});
+                let notification;
+                if (isMobile) {
+                    notification = 'Tilt your device! No tilting for iOS 12+, tap instead.'
+                }
+                else {
+                    notification = 'Move your mouse around!'
+                }
                 store.addNotification({
-                    message: 'Move your mouse or tilt your phone (except iPhones)!',
-                    type: 'info',                         // 'default', 'success', 'info', 'warning'
-                    container: 'top-center',                // where to position the notifications
-                    animationIn: ["animated", "flipInX"],     // animate.css classes that's applied
-                    animationOut: ["animated", "flipOutX"],   // animate.css classes that's applied
+                    message: notification,
+                    type: 'info',                         
+                    container: 'top-center',              
+                    animationIn: ["animated", "flipInX"], 
+                    animationOut: ["animated", "flipOutX"],
                     dismiss: {
                       duration: 5000 
                     }
