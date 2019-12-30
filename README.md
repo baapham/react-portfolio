@@ -20,7 +20,15 @@ https://alex-pham-portfolio.herokuapp.com/
 * CSS (React)
 * HTML
 * Hosted on Heroku (I may possibly migrating to DigitalOcean)
-
+* Significant 3rd Party tools:
+    * react-particles-js (https://www.npmjs.com/package/react-particles-js)
+        * This is for the initial background when you first enter the website
+    * parallax.js (https://matthew.wagerfield.com/parallax/)
+        * I used this for the moving clouds which hold my different skills
+    * SVG logos (https://github.com/gilbarbara/logos)
+        * I used this for many of the logos for different technologies in my skill section
+    * Triangles.js (https://github.com/Arathrix/Triangles.js)
+        * I used this for the contact form
 ## Challenges
 Through the development of my project I ran into a few challenges:
 
