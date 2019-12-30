@@ -1,15 +1,19 @@
 .contact {
     background-color: $dark-grey;
     min-height: 100vh;
+    // position: relative;
 }
 
 #triangle-canvas {
-    z-index: 1;
+    height: 100%;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
-// .triangle-container {
-//     position: absolute;
-//     top: 0; 
-//     left: 0;
-// }
+.triangle-container {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}

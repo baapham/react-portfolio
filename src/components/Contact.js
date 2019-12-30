@@ -10,10 +10,6 @@ export default class MyForm extends React.Component {
     }
 
     componentDidMount() {
-        // const script = document.createElement("script");
-        // script.async = true;
-        // script.src = './Triangles.js';
-        // document.body.appendChild(script);
         const canvas = document.getElementById("triangle-canvas");
         const altBG = document.getElementById("altBG");
         new TriangleBG({
@@ -28,19 +24,19 @@ export default class MyForm extends React.Component {
             variance : 0.9,
             pattern : "y",
             baseColor1 : {
-            baseHue : 210,
-            baseSaturation : 100,
-            baseLightness : 35
+                baseHue : 210,
+                baseSaturation : 100,
+                baseLightness : 45
             },
             baseColor2 : {
-            baseHue : 210,
-            baseSaturation : 100,
-            baseLightness : 35
+                baseHue : 210,
+                baseSaturation : 100,
+                baseLightness : 45
             },
             colorDelta : {
-            hue : 0,
-            lightness : 0,
-            saturation : 0
+                hue : 0,
+                lightness : 0,
+                saturation : 0
             }
        });
     }
@@ -69,8 +65,11 @@ export default class MyForm extends React.Component {
         const { status } = this.state;
         return (
             <div className="contact">
-                <div className="triangle-container">
-                <form
+                    <canvas id="triangle-canvas">
+                    </canvas>
+                    <div id="altBG"></div>
+                    <div className="triangle-container">
+                            <form
                             onSubmit={this.submitForm}
                             action="https://formspree.io/mgeonlgp"
                             method="POST"
@@ -82,11 +81,8 @@ export default class MyForm extends React.Component {
                             {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                         </form>
-                    <canvas className="contact" id="triangle-canvas">
-                    </canvas>
-                    <div id="altBG"></div>
+                    </div>
                     
-                </div>
             </div>            
         );
     }

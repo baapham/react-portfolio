@@ -8,7 +8,10 @@ class Header extends React.Component {
         super(props);
         this.state = {
             currentScrollHeight: 0,
-            warning: false
+            // displays the warning only in a certain range and ensure that it only gets displayed once in this range
+            warning: false,
+            // displays the notification only once
+            once: false
         }
     }
     componentDidMount () {      
@@ -20,16 +23,20 @@ class Header extends React.Component {
             let aboveBot =(currHeight < (skillsSection.offsetHeight + skillsSection.offsetTop)); 
             if (belowTop && aboveBot && !this.state.warning) {
                 this.setState({ warning: true})
-                store.addNotification({
-                    message: 'Move your mouse or tap/tilt your phone (no tilting for iPhones)!',
-                    type: 'info',                         
-                    container: 'top-center',              
-                    animationIn: ["animated", "flipInX"], 
-                    animationOut: ["animated", "flipOutX"],
-                    dismiss: {
-                      duration: 5000 
-                    }
-                  })
+                if (!this.state.once){
+                    store.addNotification({
+                        message: 'Move your mouse or tilt your phone (tap instead for iPhones)',
+                        type: 'info',                         
+                        container: 'bottom-center',              
+                        animationIn: ["animated", "flipInX"], 
+                        animationOut: ["animated", "flipOutX"],
+                        dismiss: {
+                          duration: 5000 
+                        }
+                    })
+                    this.setState({ once: true})
+                }
+                
             }
             else if (this.state.warning && (!belowTop || !aboveBot)) {
                 this.setState({ warning: false})

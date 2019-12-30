@@ -1,12 +1,13 @@
-// console.log("here")
-
-// const hello = () => {
-//    console.log("hi")
-// }
 /*
 Triangles.js - v0.8
 Copyright (c) 2015 Taylor Lei
 Licensed under the MIT license.
+*/
+
+/*
+   From Alex   
+   A lot of this code seems outdated but I didn't want to touch it too much in case it breaks
+   I just cleared out most of the warnings (replaced some vars with lets, changed new Array() to just [], etc..)
 */
 export var TriangleBG = function(opts) {
    if (opts.canvas.tagName !== "CANVAS") {
@@ -60,7 +61,7 @@ export var TriangleBG = function(opts) {
       cellHeight: 100
    };
 
-   this.vert = new Array();
+   this.vert = [];
    this.mouse = {x:null,y:null}
 
    //set baseCell width and height from options:
@@ -152,6 +153,8 @@ export var TriangleBG = function(opts) {
             this.mouse.x = e.clientX - this.render.offset.x - this.canvas.offsetLeft + scrollLeft;
             this.mouse.y = e.clientY - this.render.offset.y - this.canvas.offsetTop + scrollTop;
          break;
+         default:
+            break;
       }
    }
 
@@ -246,7 +249,7 @@ TriangleBG.prototype.renderLoop = function() {
          centerX1 = centerX1/3;
          centerY1 = centerY1/3;
          if (this.render.mouseLight && Math.pow(Math.abs(this.mouse.x - centerX1),2) + Math.pow(Math.abs(this.mouse.y-centerY1),2) < Math.pow(mouseLightRadius,2)) {
-            var radius = Math.sqrt( Math.pow(Math.abs(this.mouse.x-centerX1),2) + Math.pow(Math.abs(this.mouse.y - centerY1),2) );
+            let radius = Math.sqrt( Math.pow(Math.abs(this.mouse.x-centerX1),2) + Math.pow(Math.abs(this.mouse.y - centerY1),2) );
             lightnessIncrement = (mouseLightRadius-radius)/(mouseLightRadius)*this.render.mouseLightIncrement;
          }
 
@@ -283,7 +286,7 @@ TriangleBG.prototype.renderLoop = function() {
          centerX2 = centerX2/3;
          centerY2 = centerY2/3;
          if (this.render.mouseLight && Math.pow(Math.abs(this.mouse.x - centerX2),2) + Math.pow(Math.abs(this.mouse.y-centerY2),2) < Math.pow(mouseLightRadius,2)) {
-            var radius = Math.sqrt( Math.pow(Math.abs(this.mouse.x-centerX2),2) + Math.pow(Math.abs(this.mouse.y - centerY2),2) );
+            let radius = Math.sqrt( Math.pow(Math.abs(this.mouse.x-centerX2),2) + Math.pow(Math.abs(this.mouse.y - centerY2),2) );
             lightnessIncrement = (mouseLightRadius-radius)/(mouseLightRadius)*this.render.mouseLightIncrement;
          }
          var col2 = 'hsl(' + Math.floor(this.render.color2.hue + hueDelta) + ', ' + Math.floor(this.render.color2.saturation + saturationDelta) +  '% ,' + (this.render.color2.lightness + lightnessDelta + lightnessIncrement) +'%)';
