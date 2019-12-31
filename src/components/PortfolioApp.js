@@ -5,8 +5,8 @@ import About from './About';
 import Projects from './Projects';
 import Background from './Background';
 import Skills from './Skills';
-import MyForm from './Contact';
-
+import Contact from './Contact';
+import Footer from './Footer'
 
 class App extends React.Component {
   render() {
@@ -18,7 +18,8 @@ class App extends React.Component {
                 <About id="about" />
                 <Skills id="skills" />
                 <Projects id="projects" />
-                <MyForm />
+                <Contact />
+                <Footer />
             </div>
       )
   } 
