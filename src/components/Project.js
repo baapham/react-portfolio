@@ -10,9 +10,15 @@ const Project = (props) => (
             <div className="project-title">
                 {props.title}
             </div>
-            <button className="project-more">
-                <i className="arrow"></i> Find out more 
-            </button>
+            <div className="project-description">
+                {props.description}
+            </div>
+            <div className="project-more">
+                <button className="button-more">
+                    <i className="arrow"></i> Find out more 
+                </button>
+            </div>
+            
             
         </div>
     </div>
