@@ -70,7 +70,7 @@
     position: relative;
 	left: 20%;
 	top: 20%;
-	transform: scale(0.2);
+	transform: scale(0.8);
 }
 
 .x1 {
@@ -107,5 +107,8 @@
 	}
 	.cloud-position-4 {
 		transform: scale(1.5);
+	}
+	.bird-position {
+		transform: scale(0.3);
 	}
 }

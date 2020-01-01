@@ -2,8 +2,27 @@
     background-color: $light-blue;
     color: $off-white;
     min-height: 100vh;
+    
 }
 
 .projects-main {
     padding: 5rem 0 5rem 0;
+    min-height: inherit;
+}
+
+.projects-content {
+    align-items: center;
+    display: grid;
+    grid-row-gap: $m-size;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;
+    min-height: inherit;
+}
+
+@media(min-width: $desktop-breakpoint) {
+    .projects-content {
+        grid-template-columns: 50% 50%;
+    }
 }
