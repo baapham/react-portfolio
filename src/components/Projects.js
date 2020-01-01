@@ -33,12 +33,12 @@ const Projects = (props) => (
                         title="React Portfolio"
                         tech="CSS, Heroku, HTML, Javascript (ReactJS)"
                     />
-                    <Project 
+                    {/* <Project 
                         // imgSrc={require('../images/Countdown.png')}
                         imgSrc={Countdown}
                         title="Countdown"
                         tech="Bootstrap, CSS, HTML, PHP"
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
