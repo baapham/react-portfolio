@@ -4,7 +4,7 @@ import React from 'react';
 const Project = (props) => (
     <div className="project">
         <div className="project-image">
-            <img src={props.imgSrc} alt={props.imgSrc}></img>
+            <img src={props.imgSrc} alt={props.title}></img>
         </div>
         <div className="project-content">
             <div className="project-title">
