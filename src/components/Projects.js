@@ -3,7 +3,7 @@ import Project from './Project';
 import IMnotDB from '../images/IMnotDb.png';
 import AccessGESSS from '../images/AccessGESSS.png';
 import ReactPortfolio from '../images/ReactPortfolio.png';
-import Countdown from '../images/Countdown.png';
+// import Countdown from '../images/Countdown.png';
 
 // represents the whole entire projects section
 const Projects = (props) => (
