@@ -75,3 +75,45 @@
         outline: 0;
     }
 }
+.button-more {
+    background-color: transparent;
+    border-style: none;
+    // bottom: 20px;
+    color: $blue;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    transition: .25s;
+    i {
+        border: solid $blue;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        margin: 0 5px 0 0;
+        padding: 4px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        transform: translateX(5px);
+    }
+}
+
+.modal-button {
+    background-color: $blue; 
+    border: 2px solid $blue;
+    border-radius: 2px;
+    cursor: pointer;
+    color: $off-white; 
+    font-size: $ml-size;
+    margin: 20px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    &:focus {
+        outline: 0;
+    }
+}

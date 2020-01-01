@@ -17,22 +17,54 @@ const Projects = (props) => (
                     <Project 
                         imgSrc={IMnotDB}
                         title="IMnotDb"
-                        description={<p>A clone of IMDb, search for movies, get their ratings and more</p>}
+                        shortDescription={<p>A clone of IMDb, search for movies, get their ratings and more</p>}
+                        longDescription='<h3 class="modal-subtitle">Description</h3>
+                        <p>Hello</p>
+                        <h3 class="modal-subtitle">Links</h3>
+                        <p>Demo</p>
+                        <p>Github</p>
+                        <h3 class="modal-subtitle">Technology</h3>
+                        <p>Technology used</p>
+                        '
                     />
                     <Project 
                         imgSrc={AccessGESSS}
                         title="Access GESSS"
-                        description={<p>A medium to connect conference attendees and organisers together</p>}
+                        shortDescription={<p>A medium to connect conference attendees and organisers together</p>}
+                        longDescription='<h3 class="modal-subtitle">Description</h3>
+                        <p>Hello</p>
+                        <h3 class="modal-subtitle">Links</h3>
+                        <p>Demo</p>
+                        <p>Github</p>
+                        <h3 class="modal-subtitle">Technology</h3>
+                        <p>Technology used</p>
+                        '
                     />
                     <Project 
                         imgSrc={ReactPortfolio}
                         title="React Portfolio"
-                        description={<p>This website! A portfolio to show my projects</p>}
+                        shortDescription={<p>This website! A portfolio to show my projects</p>}
+                        longDescription='<h3 class="modal-subtitle">Description</h3>
+                        <p>Hello</p>
+                        <h3 class="modal-subtitle">Links</h3>
+                        <p>Demo</p>
+                        <p>Github</p>
+                        <h3 class="modal-subtitle">Technology</h3>
+                        <p>Technology used</p>
+                        '
                     />
                     <Project 
                         imgSrc={Countdown}
                         title="Countdown"
-                        description={<p>A simulation of the TV show of the same name</p>}
+                        shortDescription={<p>A simulation of the TV show of the same name</p>}
+                        longDescription='<h3 class="modal-subtitle">Description</h3>
+                        <p>Hello</p>
+                        <h3 class="modal-subtitle">Links</h3>
+                        <p>Demo</p>
+                        <p>Github</p>
+                        <h3 class="modal-subtitle">Technology</h3>
+                        <p>Technology used</p>
+                        '
                     />
                 </div>
             </div>

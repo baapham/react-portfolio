@@ -1,0 +1,20 @@
+.modal-title {
+    font-size: $l-size;
+}
+
+.modal-content{ 
+    font-size: $m-size;
+    text-align: left;
+    padding: $m-size;
+}
+
+.modal-image {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+
+.modal-close {
+    // transform: scale(2);
+}
+.modal-subtitle {
+    margin: 0;
+}

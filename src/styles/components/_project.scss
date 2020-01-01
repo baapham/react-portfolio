@@ -47,29 +47,3 @@
     // flex-direction: column;
     // justify-content: flex-end;
 }
-.button-more {
-    background-color: transparent;
-    border-style: none;
-    // bottom: 20px;
-    color: $blue;
-    cursor: pointer;
-    padding: 0;
-    text-align: left;
-    text-decoration: none;
-    transition: .25s;
-    i {
-        border: solid $blue;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        margin: 0 5px 0 0;
-        padding: 4px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
-    &:focus {
-        outline: 0;
-    }
-    &:hover {
-        transform: translateX(5px);
-    }
-}
