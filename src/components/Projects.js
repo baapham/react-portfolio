@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 
+// represents the whole entire projects section
 const Projects = (props) => (
     <div className="projects">
         <div className="projects-main">
@@ -10,6 +11,7 @@ const Projects = (props) => (
                 </div>
                 <div className="projects-content">
                     <Project 
+                    // Had to pass it in like this because I was running into errors
                         imgSrc={require('../images/IMnotDb.png')}
                         title="IMnotDb"
                         tech="Bootstrap, CSS, HTML, Javascript"

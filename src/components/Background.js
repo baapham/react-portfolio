@@ -33,7 +33,9 @@ const particleParam = {
   }
 }
 
+// represents the initial background component
 class Background extends React.Component {
+  // This is to set it so that the header doesn't ccover part of the about section
     workClick = () => {
         const aboutHeight = document.getElementById('about').offsetTop;
         const headerHeight = document.getElementById('header').offsetHeight;

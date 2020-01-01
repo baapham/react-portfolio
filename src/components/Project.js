@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Represents each project in the project section
 const Project = (props) => (
     <div className="project">
         <div className="project-image">
