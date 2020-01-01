@@ -2,11 +2,9 @@
     background-color: $off-white;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
     border-radius: 10px;
-    min-height: 100%;
     margin: 0px;
     overflow: hidden;
     padding: 0px;
-    position: relative;
     width: 70%;
 }
 
@@ -25,7 +23,6 @@
 }
 .project-content {
     color: $dark-grey;
-    min-height: 100%;
     padding: $m-size $l-size;
 }
 
@@ -40,8 +37,6 @@
     border-style: none;
     color: $blue;
     cursor: pointer;
-    bottom: 20px;
-    position: absolute;
     padding: 0;
     text-decoration: none;
     transition: .25s;

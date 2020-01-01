@@ -17,22 +17,18 @@ const Projects = (props) => (
                     <Project 
                         imgSrc={IMnotDB}
                         title="IMnotDb"
-                        tech="Bootstrap, CSS, HTML, Javascript"
                     />
                     <Project 
                         imgSrc={AccessGESSS}
                         title="Access GESSS"
-                        tech="DigitalOcean, Google Maps API, MySQL, Wordpress"
                     />
                     <Project 
                         imgSrc={ReactPortfolio}
                         title="React Portfolio"
-                        tech="CSS, Heroku, HTML, Javascript (ReactJS)"
                     />
                     <Project 
                         imgSrc={Countdown}
                         title="Countdown"
-                        tech="Bootstrap, CSS, HTML, PHP"
                     />
                 </div>
             </div>
