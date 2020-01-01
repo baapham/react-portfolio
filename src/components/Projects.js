@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+
 const Projects = (props) => (
     <div className="projects">
         <div className="projects-main">
@@ -9,22 +10,22 @@ const Projects = (props) => (
                 </div>
                 <div className="projects-content">
                     <Project 
-                        imgSrc="IMnotDb.png" 
+                        imgSrc={require('../images/IMnotDb.png')}
                         title="IMnotDb"
                         tech="Bootstrap, CSS, HTML, Javascript"
                     />
                     <Project 
-                        imgSrc="AccessGESSS.png" 
+                        imgSrc={require('../images/AccessGESSS.png')}
                         title="Access GESSS"
                         tech="DigitalOcean, Google Maps API, MySQL, Wordpress"
                     />
                     <Project 
-                        imgSrc="ReactPortfolio.png" 
+                        imgSrc={require('../images/ReactPortfolio.png')}
                         title="React Portfolio"
                         tech="CSS, Heroku, HTML, Javascript (ReactJS)"
                     />
                     <Project 
-                        imgSrc="Countdown.png" 
+                        imgSrc={require('../images/Countdown.png')}
                         title="Countdown"
                         tech="Bootstrap, CSS, HTML, PHP"
                     />

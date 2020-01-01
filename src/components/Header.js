@@ -25,7 +25,7 @@ class Header extends React.Component {
                 this.setState({ warning: true})
                 if (!this.state.once){
                     store.addNotification({
-                        message: 'Move your mouse or tilt your phone (tap instead for iPhones)',
+                        message: 'Move your mouse or tap/tilt your phone!',
                         type: 'info',                         
                         container: 'bottom-center',              
                         animationIn: ["animated", "flipInX"], 
