@@ -25,16 +25,16 @@ export default class MyForm extends React.Component {
             pattern : "y",
             baseColor1 : {
                 baseHue : 210,
-                baseSaturation : 100,
-                baseLightness : 45
+                baseSaturation : 74.8,
+                baseLightness : 58
             },
             baseColor2 : {
                 baseHue : 210,
-                baseSaturation : 100,
-                baseLightness : 45
+                baseSaturation : 74.8,
+                baseLightness : 56
             },
             colorDelta : {
-                hue : 0,
+                hue : 2,
                 lightness : 0,
                 saturation : 0
             }

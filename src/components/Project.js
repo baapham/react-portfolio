@@ -6,7 +6,7 @@ const Project = (props) => {
     const handleModal = () => {
         Swal.fire({
             buttonsStyling: false,
-            confirmButtonText: 'Nice',
+            confirmButtonText: 'OK',
             customClass: {
                 background: '#f7f7f7',
                 closeButton: 'modal-close',

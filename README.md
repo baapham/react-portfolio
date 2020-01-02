@@ -17,7 +17,7 @@ https://alex-pham-portfolio.herokuapp.com/
 
 ## Built With
 * Javascript (React)
-* CSS (React)
+* CSS (SCSS)
 * HTML
 * Hosted on Heroku (I may possibly migrating to DigitalOcean)
 * Significant 3rd Party tools:
