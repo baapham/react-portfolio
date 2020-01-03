@@ -3,8 +3,15 @@
     background: linear-gradient(0deg, rgba(68,174,228,1) 55%, rgba(68,174,228,0.7245273109243697) 100%);
     color: $off-white;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .skills-content {
     padding: 2rem 5rem 2rem 5rem;
+}
+
+@media(min-width: $desktop-breakpoint) {
+    .skills {
+        min-height: 120vh;
+    }
 }

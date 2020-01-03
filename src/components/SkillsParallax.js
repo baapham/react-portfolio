@@ -19,7 +19,7 @@ class SkillsParallax extends React.Component {
                     </div>
                 </div>
                 
-                <div className="layer" data-depth="0.4">
+                <div className="layer" data-depth="0.2">
                     <div className="cloud-position-3">
                         <img src={require('../images/cloud-services.svg')} className="cloud x3 cloud-shadow" alt="databases"></img>
                     </div>
