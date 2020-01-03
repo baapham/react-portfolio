@@ -1,6 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
-
+import {isMobile} from 'react-device-detect';
 // Represents each project in the project section
 const Project = (props) => {
     const handleModal = () => {
@@ -15,7 +15,7 @@ const Project = (props) => {
                 image: 'modal-image',
                 title: 'modal-title'
             },
-            imageUrl: props.imgSrc,
+            imageUrl: !isMobile && props.imgSrc,
             showCloseButton: true,
             title: props.title,
             html: props.longDescription,
