@@ -4,34 +4,50 @@
     position: relative;
 }
 
+.particle-cover {
+    background: transparent;
+    pointer-events: none;
+    position: absolute;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 .particles-container {
     color: $dark-grey;
-    width: 90rem;
-    min-height: inherit;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90rem;
+    padding: 0 $m-size;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 .particle-background {
     background: $dark-blue;
-    height: 100vh;
+    min-height: inherit;
     position: relative;
 }
 
 .contact-form {
-    background: $off-white;
+    background-color: lighten($off-white, 50);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
     border-radius: 10px;
+    margin: auto;
     padding: $xl-size;
-    position: absolute;
-    left: 50%;
+    // position: absolute;
+    // left: 50%;
     text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    width: 100%;
     h1 {
         display: inline-block;
         margin: 0;
@@ -40,18 +56,18 @@
 .contact-form-container {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: left;
 }
 
 .contact-information {
     display: flex;
     flex-direction: column;
+    flex: 1 0 0;
     justify-content: space-between;
-    padding: $l-size;
-    width: 50%;
+    padding: $s-size 0 0 0;
     p {
-        margin: 0 16px;
+        margin: $s-size;
         padding: 0 0 $m-size 0;
     }
 }
@@ -59,21 +75,49 @@
 .contact-input {
     display: flex;
     flex-direction: column;
+    flex: 2 0 0;
     justify-content: space-around;
-    padding: $l-size;
-    width: 50%;
+    padding: $s-size 0 0 0;
     h1 {
         padding: 0;
     }
+    input, textarea {
+        border-radius: 3px;
+        border-style: none;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+        margin: $s-size;
+        padding: $s-size;
+    }
 }
+
 
 .message {
     height: 150px;
     resize: vertical;
 }
 
+.mobile-particles {
+    min-height: 100%;
+    width: 100%;
+}
+.mobile-particle-cover {
+    min-height: 100%;
+    // padding: 2rem 5rem 2rem 5rem;
+    padding: 5rem 0 5rem 0;
+    width: 100%;
+    z-index: 1;
+}
 @media (min-width: $desktop-breakpoint) {
+    .contact-form {
+        background: $off-white;
+    }
     .contact-form-container {
         flex-direction: row;
+    }
+    .contact-input {
+        padding: $l-size;
+    }
+    .contact-information {
+        padding: $l-size;
     }
 }

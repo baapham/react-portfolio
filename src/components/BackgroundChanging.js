@@ -39,8 +39,8 @@ export default () => {
     }
     
     function addClickListeners() {
-      document.addEventListener("touchstart", handleEvent);
-      document.addEventListener("mousedown", handleEvent);
+      c.addEventListener("touchstart", handleEvent);
+      c.addEventListener("mousedown", handleEvent);
 
     };
     

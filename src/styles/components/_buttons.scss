@@ -118,3 +118,20 @@
         outline: 0;
     }
 }
+
+.submit-button {
+    background-color: $blue; 
+    border: 2px solid $blue;
+    border-radius: 12px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+    color: $off-white; 
+    margin: $s-size;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    &:focus {
+        outline: 0;
+    }
+}
