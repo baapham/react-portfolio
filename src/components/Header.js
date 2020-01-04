@@ -59,6 +59,11 @@ class Header extends React.Component {
         const headerHeight = document.getElementById('header').offsetHeight;
         window.scrollTo(0, projectHeight - headerHeight);
     };
+    handleScrollContact = () => {
+        const contactHeight = document.getElementById('contact').offsetTop;
+        const headerHeight = document.getElementById('header').offsetHeight;
+        window.scrollTo(0, contactHeight - headerHeight);
+    };
 
     render() {
         return (
@@ -69,6 +74,7 @@ class Header extends React.Component {
                         <div className="header__links">
                             <button onClick={this.handleScrollAbout} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>About</button>
                             <button onClick={this.handleScrollProjects} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>Projects</button>
+                            <button onClick={this.handleScrollContact} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>Contact</button>
                         </div>
                     </div>
                 </div>

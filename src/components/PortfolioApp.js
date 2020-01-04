@@ -18,7 +18,7 @@ class App extends React.Component {
                 <About id="about" />
                 <Skills id="skills" />
                 <Projects id="projects" />
-                <Contact />
+                <Contact id="contact"/>
                 <Footer />
             </div>
       )

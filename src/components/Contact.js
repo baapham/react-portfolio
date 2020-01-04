@@ -68,27 +68,34 @@ export default class MyForm extends React.Component {
     render() {
         const { status } = this.state;
         return (
-            <div className="contact">
+            <div className="contact" id={this.props.id}>
                     <Particles
                         className="particle-background"
                         params={particleParam}
                     />
                     
                     <div className="particles-container">
-                    <div className="content-container">
-                        <form
-                            onSubmit={this.submitForm}
-                            action="https://formspree.io/mgeonlgp"
-                            method="POST"
-                        >
-                            <label>Email:</label>
-                            <input type="email" name="email" />
-                            <label>Message:</label>
-                            <input type="text" name="message" />
-                            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-                            {status === "ERROR" && <p>Ooops! There was an error.</p>}
-                        </form>
-                    </div>
+                            <div className="section-heading--contact">
+                                <h1>Contact</h1>
+                            </div>
+                            <form
+                                onSubmit={this.submitForm}
+                                action="https://formspree.io/mgeonlgp"
+                                method="POST"
+                                className="contact-form"
+                            >
+                                <div className="contact-input">
+                                    <label>Email:</label>
+                                    <input type="email" name="email" />
+                                    <label>Message:</label>
+                                    <input type="text" name="message" />
+                                    {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+                                    {status === "ERROR" && <p>Ooops! There was an error.</p>}
+                                </div>
+                                <div className="contact-information">
+                                    <p>Some information</p>
+                                </div>
+                            </form>
                     </div>
                     
             </div>            

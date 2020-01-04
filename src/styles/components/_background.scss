@@ -20,7 +20,11 @@
     height: 100vh;
     width: 100vw;
     // position: absolute;
+    // touch-action: none;
     z-index: 1;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 
