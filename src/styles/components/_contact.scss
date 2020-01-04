@@ -32,7 +32,7 @@
 
 .particle-background {
     background: $dark-blue;
-    min-height: inherit;
+    height: 100vh;
     position: relative;
 }
 
@@ -102,7 +102,6 @@
 }
 .mobile-particle-cover {
     min-height: 100%;
-    // padding: 2rem 5rem 2rem 5rem;
     padding: 5rem 0 5rem 0;
     width: 100%;
     z-index: 1;

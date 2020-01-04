@@ -1,36 +1,110 @@
 import React from "react";
 import Particles from 'react-particles-js';
-import isMobile from 'react-device-detect';
+import {isMobile} from 'react-device-detect';
 const particleParam = {
-  particles: {
-    number: {
-      value: 60
-    },
-    line_linked: {
-      number: {
-        value: 50,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      },
-      size: {
-        value: 20
-      },
-    }
-  },
-  interactivity: {
-    events: {
-        onhover: {
-            enable: true,
-            mode: 'grab'   
+    "particles": {
+        "number": {
+          "value": 101,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
         },
-        onclick: {
-            enable: true,
-            mode: 'push'
+        "color": {
+          "value": "#fff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 10,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 500,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 2
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "top",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
         }
-    }
-  }
+      },
+      "interactivity": {
+        "detect_on": "window",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "bubble"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 0.5
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 4,
+            "duration": 0.3,
+            "opacity": 1,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
 }
 
 export default class MyForm extends React.Component {
@@ -88,12 +162,9 @@ export default class MyForm extends React.Component {
                                     </div>
                                     <div className="contact-form-container">
                                         <div className="contact-input" >
-                                            {/* <label>Email:</label> */}
                                             <input type="text" name="name" placeholder=" Your name" />
                                             <input type="email" name="email" placeholder=" Your email" />
-                                            {/* <label>Message:</label> */}
                                             <textarea name="message" placeholder=" Your message" className="message"></textarea>
-                                            {/* <input type="textarea" name="message" placeholder=" Your message" className="message"/> */}
                                             {status === "SUCCESS" ? <p>Thanks!</p> : <button className="submit-button">Submit</button>}
                                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                                         </div>
