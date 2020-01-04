@@ -83,17 +83,27 @@ export default class MyForm extends React.Component {
                                 action="https://formspree.io/mgeonlgp"
                                 method="POST"
                                 className="contact-form"
-                            >
-                                <div className="contact-input">
-                                    <label>Email:</label>
-                                    <input type="email" name="email" />
-                                    <label>Message:</label>
-                                    <input type="text" name="message" />
-                                    {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-                                    {status === "ERROR" && <p>Ooops! There was an error.</p>}
+                                >
+                                <div className="section-heading--about">
+                                    <h1>Let's talk</h1>
                                 </div>
-                                <div className="contact-information">
-                                    <p>Some information</p>
+                                <div className="contact-form-container">
+                                    <div className="contact-input" >
+                                        {/* <label>Email:</label> */}
+                                        <input type="text" name="name" placeholder=" Your name" />
+                                        <input type="email" name="email" placeholder=" Your email" />
+                                        {/* <label>Message:</label> */}
+                                        <textarea name="message" placeholder=" Your message" className="message"></textarea>
+                                        {/* <input type="textarea" name="message" placeholder=" Your message" className="message"/> */}
+                                        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+                                        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+                                    </div>
+                                    <div className="contact-information">
+                                        <p>Want to get in touch? Suggestions on my projects?
+                                        Need someone to talk to? Feel free to contact me through here.
+                                        <br /><br />Have the latest and greatest cryptocurrency? Single ladies in my area?
+                                        Nigerian prince? Please don't contact me.</p>
+                                    </div>
                                 </div>
                             </form>
                     </div>

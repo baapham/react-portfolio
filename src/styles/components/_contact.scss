@@ -16,8 +16,7 @@
 }
 
 .particle-background {
-    background: rgb(54,64,81);
-    background: linear-gradient(180deg, rgba(54,64,81,1) 55%, rgba(54,64,81,0.8757878151260504) 100%);
+    background: $dark-blue;
     height: 100vh;
     position: relative;
 }
@@ -25,15 +24,24 @@
 .contact-form {
     background: $off-white;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
-    display: flex;
-    justify-content: space-around;
-    // height: 50%;
-    // width: 80%;
+    border-radius: 10px;
     padding: $xl-size;
     position: absolute;
-    top: 50%;
     left: 50%;
+    text-align: center;
+    top: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
+    h1 {
+        display: inline-block;
+        margin: 0;
+    }
+}
+.contact-form-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: left;
 }
 
 .contact-information {
@@ -41,11 +49,31 @@
     flex-direction: column;
     justify-content: space-between;
     padding: $l-size;
+    width: 50%;
+    p {
+        margin: 0 16px;
+        padding: 0 0 $m-size 0;
+    }
 }
 
 .contact-input {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: $l-size;
+    width: 50%;
+    h1 {
+        padding: 0;
+    }
+}
+
+.message {
+    height: 150px;
+    resize: vertical;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .contact-form-container {
+        flex-direction: row;
+    }
 }
