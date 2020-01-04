@@ -1,5 +1,38 @@
 import React from "react";
-import { TriangleBG } from './Triangles.js';
+import Particles from 'react-particles-js';
+
+const particleParam = {
+  particles: {
+    number: {
+      value: 60
+    },
+    line_linked: {
+      number: {
+        value: 50,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      size: {
+        value: 20
+      },
+    }
+  },
+  interactivity: {
+    events: {
+        onhover: {
+            enable: true,
+            mode: 'grab'   
+        },
+        onclick: {
+            enable: true,
+            mode: 'push'
+        }
+    }
+  }
+}
+
 export default class MyForm extends React.Component {
     constructor(props) {
         super(props);
@@ -10,35 +43,6 @@ export default class MyForm extends React.Component {
     }
 
     componentDidMount() {
-    //     const canvas = document.getElementById("triangle-canvas");
-    //     const altBG = document.getElementById("altBG");
-    //     new TriangleBG({
-    //         canvas : canvas,
-    //         alternateElem : altBG,
-    //         cellHeight : 120,
-    //         cellWidth : 100,
-    //         mouseLight : true,
-    //         mouseLightRadius : 200,
-    //         mouseLightIncrement : 40,
-    //         resizeAdjustment : true,
-    //         variance : 0.9,
-    //         pattern : "y",
-    //         baseColor1 : {
-    //             baseHue : 210,
-    //             baseSaturation : 74.8,
-    //             baseLightness : 58
-    //         },
-    //         baseColor2 : {
-    //             baseHue : 210,
-    //             baseSaturation : 74.8,
-    //             baseLightness : 56
-    //         },
-    //         colorDelta : {
-    //             hue : 2,
-    //             lightness : 0,
-    //             saturation : 0
-    //         }
-    //    });
     }
   
     submitForm(ev) {
@@ -65,11 +69,14 @@ export default class MyForm extends React.Component {
         const { status } = this.state;
         return (
             <div className="contact">
-                    {/* <canvas id="triangle-canvas">
-                    </canvas>
-                    <div id="altBG"></div> */}
-                    <div className="triangle-container">
-                            <form
+                    <Particles
+                        className="particle-background"
+                        params={particleParam}
+                    />
+                    
+                    <div className="particles-container">
+                    <div className="content-container">
+                        <form
                             onSubmit={this.submitForm}
                             action="https://formspree.io/mgeonlgp"
                             method="POST"
@@ -81,6 +88,7 @@ export default class MyForm extends React.Component {
                             {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                         </form>
+                    </div>
                     </div>
                     
             </div>            

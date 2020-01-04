@@ -26,6 +26,8 @@ const Projects = (props) => (
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
                         <a href="https://alex-pham.com/IMnotDb/" class="demo">Demo</a>
+                        </p>
+                        <p>
                         <a href="https://github.com/baapham/IMnotDb" class="demo">Github</a>
                         </p>
                         <h3 class="modal-subtitle">Technology</h3>

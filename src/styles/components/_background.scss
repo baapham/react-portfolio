@@ -1,11 +1,9 @@
-.particle-background {
-    background: rgb(54,64,81);
-    background: linear-gradient(180deg, rgba(54,64,81,1) 55%, rgba(54,64,81,0.8757878151260504) 100%);
+.main-background {
     height: 100vh;
     position: relative;
 }
 
-.particle-title {
+.main-title {
     color: $off-white;
     font-size: $xl-size;
     left: 50%;
@@ -17,11 +15,13 @@
     z-index: 1;
 }
 
-.particle-title:hover {
-    cursor: default;
+#main-canvas {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    // position: absolute;
+    z-index: 1;
 }
 
-.particle-container {
-    min-height: 100vh;
-    min-width: 100vw;
-}
+
+
