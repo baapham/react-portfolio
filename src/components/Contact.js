@@ -4,11 +4,7 @@ import {isMobile} from 'react-device-detect';
 const particleParam = {
     "particles": {
         "number": {
-          "value": 101,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
+          "value": 100
         },
         "color": {
           "value": "#fff"
@@ -45,10 +41,6 @@ const particleParam = {
         },
         "line_linked": {
           "enable": false,
-          "distance": 500,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 2
         },
         "move": {
           "enable": true,
@@ -58,50 +50,6 @@ const particleParam = {
           "straight": false,
           "out_mode": "out",
           "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "window",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "bubble"
-          },
-          "onclick": {
-            "enable": true,
-            "mode": "repulse"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 0.5
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 4,
-            "duration": 0.3,
-            "opacity": 1,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
         }
       },
       "retina_detect": true
@@ -165,7 +113,7 @@ export default class MyForm extends React.Component {
                                             <input type="text" name="name" placeholder=" Your name" />
                                             <input type="email" name="email" placeholder=" Your email" />
                                             <textarea name="message" placeholder=" Your message" className="message"></textarea>
-                                            {status === "SUCCESS" ? <p>Thanks!</p> : <button className="submit-button">Submit</button>}
+                                            {status === "SUCCESS" ? <p>Thanks! I'll get back to you as soon as possible.</p> : <button className="submit-button">Submit</button>}
                                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                                         </div>
                                         <div className="contact-information">

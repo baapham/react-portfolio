@@ -1,12 +1,11 @@
 .contact {
-    // background-color: $dark-grey;
     min-height: 100vh;
     position: relative;
 }
 
 .particle-cover {
     background: transparent;
-    pointer-events: none;
+    // pointer-events: none;
     position: absolute;
     min-height: 100%;
     left: 0;
@@ -23,10 +22,6 @@
     margin: 0 auto;
     max-width: 90rem;
     padding: 0 $m-size;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -42,11 +37,7 @@
     border-radius: 10px;
     margin: auto;
     padding: $xl-size;
-    // position: absolute;
-    // left: 50%;
     text-align: center;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
     width: 100%;
     h1 {
         display: inline-block;
