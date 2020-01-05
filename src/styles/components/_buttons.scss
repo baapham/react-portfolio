@@ -134,3 +134,32 @@
         outline: 0;
     }
 }
+
+.button-credit-mobile {
+    background-color: transparent;
+    border-style: none;
+    color: $dark-grey;
+    cursor: pointer;
+    font-size: $m-size;
+    font-weight: bold;
+    margin: 0;
+    transition: color 1s;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.button-credit {
+    background-color: transparent;
+    border-style: none;
+    color: $off-white;
+    cursor: pointer;
+    font-size: $m-size;
+    font-weight: bold;
+    margin: 0;
+    transition: color 1s;
+    &:focus {
+        outline: 0;
+    }
+}
+

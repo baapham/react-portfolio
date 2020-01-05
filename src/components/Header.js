@@ -2,6 +2,7 @@ import React from 'react';
 import { store } from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css';
 import 'animate.css';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 class Header extends React.Component {
     constructor(props) {
@@ -11,8 +12,12 @@ class Header extends React.Component {
             // displays the warning only in a certain range and ensure that it only gets displayed once in this range
             warning: false,
             // displays the notification only once
-            once: false
+            once: false,
+            headerHeight: 74
         }
+    }
+    scrollToTop = () => {
+        scroll.scrollToTop();
     }
     componentDidMount () {      
         window.onscroll = () => {
@@ -42,6 +47,7 @@ class Header extends React.Component {
                 this.setState({ warning: false})
             }
         }
+        this.setState({headerHeight: document.getElementById('header').offsetHeight})
     }
 
     handleScrollTop = () => {
@@ -70,11 +76,49 @@ class Header extends React.Component {
             <header id="header" className={this.state.currentScrollHeight > 100 ? "header-moving" : "header-top"}>
                 <div className="content-container">
                     <div className = "header-container">
-                        <button onClick={this.handleScrollTop} className={this.state.currentScrollHeight > 100 ? "button-logo-moving" : "button-logo-top"}>AP</button>
+                        <button onClick={this.scrollToTop} className={this.state.currentScrollHeight > 100 ? "button-logo-moving" : "button-logo-top"}>AP</button>
                         <div className="header__links">
-                            <button onClick={this.handleScrollAbout} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>About</button>
-                            <button onClick={this.handleScrollProjects} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>Projects</button>
-                            <button onClick={this.handleScrollContact} className={this.state.currentScrollHeight > 100 ? "button-subtitle-moving" : "button-subtitle-top"}>Contact</button>
+                            <button 
+                            className={this.state.currentScrollHeight > 100 
+                            ? "button-subtitle-moving" 
+                            : "button-subtitle-top"}>
+                                <Link
+                                activeClass="active"
+                                to="about"
+                                offset={-this.state.headerHeight}
+                                spy={true}
+                                smooth={true}
+                                duration= {500}
+                                >About</Link>
+                            </button>
+                            
+                            <button 
+                            className={this.state.currentScrollHeight > 100 
+                            ? "button-subtitle-moving" 
+                            : "button-subtitle-top"}>
+                                <Link
+                                activeClass="active"
+                                to="projects"
+                                offset={-this.state.headerHeight}
+                                spy={true}
+                                smooth={true}
+                                duration= {500}
+                                >Projects</Link>
+                            </button>
+                            
+                            <button 
+                            className={this.state.currentScrollHeight > 100 
+                            ? "button-subtitle-moving" 
+                            : "button-subtitle-top"}>
+                                <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    offset={-this.state.headerHeight}
+                                    spy={true}
+                                    smooth={true}
+                                    duration= {500}
+                                >Contact</Link>
+                            </button>
                         </div>
                     </div>
                 </div>
