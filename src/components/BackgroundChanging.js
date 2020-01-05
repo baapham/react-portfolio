@@ -8,11 +8,11 @@ export default () => {
     var ctx = c.getContext("2d");
     var cH;
     var cW;
-    var bgColor = "#FF6138";
+    var bgColor = "#282741";
     var animations = [];
     
     var colorPicker = (function() {
-      var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
+      var colors = ["#282741", "#FFBE53", "#2980B9", "#FF6138"];
       var index = 0;
       function next() {
         index = index++ < colors.length-1 ? index : 0;
