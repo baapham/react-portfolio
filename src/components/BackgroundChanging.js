@@ -12,7 +12,8 @@ export default () => {
     var animations = [];
     
     var colorPicker = (function() {
-      var colors = ["#282741", "#FFBE53", "#2980B9", "#FF6138"];
+      // var colors = ["#282741", "#FFBE53", "#2980B9", "#FF6138"];
+      var colors = ["#282741", "#534A5F", "#9A7D7A", "#DBC89E"];
       var index = 0;
       function next() {
         index = index++ < colors.length-1 ? index : 0;

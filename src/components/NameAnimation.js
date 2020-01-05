@@ -1,9 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { render } from 'react-dom'
 import { useTransition, animated } from 'react-spring'
-// import './styles.css'
 
-export default function App() {
+export default function NameAnimation() {
   const ref = useRef([])
   const [items, set] = useState([])
   const transitions = useTransition(items, null, {
@@ -22,10 +20,12 @@ export default function App() {
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set(['Alex Pham']), 0))
-    ref.current.push(setTimeout(() => set(['Frontend', 'Software', 'Developer']), 2000))
-    ref.current.push(setTimeout(() => set(['Frontend', 'Software', 'Engineer']), 5000))
-    ref.current.push(setTimeout(() => set(['Software', 'Engineer', 'Student']), 8000))
-    ref.current.push(setTimeout(() => set(['Alex Pham']), 11000))
+    ref.current.push(setTimeout(() => set(['']), 1000))
+    ref.current.push(setTimeout(() => set(['Software', 'Engineer']), 2000))
+    ref.current.push(setTimeout(() => set(['Software', 'Engineer', 'Student']), 5000))
+    ref.current.push(setTimeout(() => set(['Frontend', 'Software', 'Engineer']), 8000))
+    ref.current.push(setTimeout(() => set(['Backend', 'Software', 'Engineer']), 11000))
+    ref.current.push(setTimeout(() => set(['Alex Pham']), 14000))
   }, [])
 
   useEffect(() => void reset(), [])
