@@ -37,6 +37,7 @@ const Projects = (props) => (
                             <li>Javascript</li>
                             <li>OMDb API</li>
                             <li>Bootstrap</li>
+                            <li>DigitalOcean</li>
                         </ul>
                         `}
                     />
@@ -78,7 +79,7 @@ const Projects = (props) => (
                          As I want to go into front end development, this project was mainly to get me familiar with React. For a portfolio website, it may be overkill but I wanted to experiment and have fun.</p>
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
-                        <a href="https://alex-pham-portfolio.herokuapp.com/" class="demo">Demo</a>
+                        <a href="https://alex-pham.com/" class="demo">Demo</a>
                         </p>
                         <p>
                         <a href="https://github.com/baapham/react-portfolio" class="demo">Github</a>
@@ -89,7 +90,7 @@ const Projects = (props) => (
                             <li>CSS</li>
                             <li>Javascript</li>
                             <li>ReactJS</li>
-                            <li>Heroku</li>
+                            <li>DigitalOcean</li>
                         </ul>
                         `}
                     />
@@ -114,6 +115,7 @@ const Projects = (props) => (
                             <li>CSS</li>
                             <li>PHP</li>
                             <li>Bootstrap</li>
+                            <li>DigitalOcean</li>
                         </ul>
                         `}
                     />
