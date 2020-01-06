@@ -25,7 +25,7 @@ const Projects = (props) => (
                         My project, IMnotDb, aims to simplify IMDb by giving a more modern and clean user interface.</p>
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
-                        <a href="https://alex-pham.com/IMnotDb/" class="demo">Demo</a>
+                        <a href="https://imnotdb.alex-pham.com/" class="demo">Demo</a>
                         </p>
                         <p>
                         <a href="https://github.com/baapham/IMnotDb" class="demo">Github</a>
@@ -57,7 +57,7 @@ const Projects = (props) => (
                         </ul>
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
-                        <a href="http://accessgesss.com/" class="demo">Demo</a>
+                        <a href="https://accessgesss.com/" class="demo">Demo</a>
                         </p>
                         <h3 class="modal-subtitle">Technology</h3>
                         <ul class="technology">
@@ -79,6 +79,8 @@ const Projects = (props) => (
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
                         <a href="https://alex-pham-portfolio.herokuapp.com/" class="demo">Demo</a>
+                        </p>
+                        <p>
                         <a href="https://github.com/baapham/react-portfolio" class="demo">Github</a>
                         </p>
                         <h3 class="modal-subtitle">Technology</h3>
@@ -101,7 +103,9 @@ const Projects = (props) => (
                         </p>
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
-                        <a href="https://alex-pham.com/countdown/" class="demo">Demo</a>
+                        <a href="https://countdown.alex-pham.com/" class="demo">Demo</a>
+                        </p>
+                        <p>
                         <a href="https://github.com/baapham/countdown" class="demo">Github</a>
                         </p>
                         <h3 class="modal-subtitle">Technology</h3>
