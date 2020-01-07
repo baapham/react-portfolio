@@ -13,7 +13,7 @@ The website is still in progress as seen below. Even after I finish the will pro
 
 ## Demo
 
-https://alex-pham-portfolio.herokuapp.com/
+https://alex-pham.com/
 
 ## Built With
 * Javascript (React)
@@ -22,13 +22,15 @@ https://alex-pham-portfolio.herokuapp.com/
 * Hosted on Heroku (I may possibly migrating to DigitalOcean)
 * Significant 3rd Party tools:
     * react-particles-js (https://www.npmjs.com/package/react-particles-js)
-        * This is for the initial background when you first enter the website
+        * I used this for the contact form
     * parallax.js (https://matthew.wagerfield.com/parallax/)
         * I used this for the moving clouds which hold my different skills
     * SVG logos (https://github.com/gilbarbara/logos)
         * I used this for many of the logos for different technologies in my skill section
-    * Triangles.js (https://github.com/Arathrix/Triangles.js)
+    * Color Changing Background (https://codepen.io/alexzaworski/pen/mEkvAG)
         * I used this for the contact form
+    * SweetAlert (https://sweetalert2.github.io/)
+         * I used this for any modals
 ## Challenges
 Through the development of my project I ran into a few challenges:
 
@@ -46,6 +48,6 @@ Through the development of my project I ran into a few challenges:
 * Making use of SVGs
 
 ## To do
-* Projects section
-* Contact section
+~~* Projects section~~
+~~* Contact section~~
 
