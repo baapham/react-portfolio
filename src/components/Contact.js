@@ -121,6 +121,10 @@ export default class MyForm extends React.Component {
                                             Need someone to talk to? Please <b>do</b> contact me through here.
                                             <br /><br />Have the latest and greatest cryptocurrency? Single ladies in my area?
                                             Nigerian prince? Please <b>do not</b> contact me.</p>
+                                            <div className="contact-socials">
+                                              <a rel="noopener noreferrer" className="contact-social-item" href="https://github.com/baapham" target="_blank"><img src={require("../images/github.svg")} alt="github"></img></a>
+                                              <a rel="noopener noreferrer" className="contact-social-item" href="https://www.linkedin.com/in/alex-pham-47a113180/" target="_blank"><img src={require("../images/linkedin.svg")} alt="linkedin"></img></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
