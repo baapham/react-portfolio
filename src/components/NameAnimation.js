@@ -20,11 +20,10 @@ export default function NameAnimation() {
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set(['Alex Pham']), 2000))
-    ref.current.push(setTimeout(() => set(['Software', 'Engineer']), 5000))
+    ref.current.push(setTimeout(() => set(['Fullstack', 'Software', 'Engineer', 'Student']), 5000))
     ref.current.push(setTimeout(() => set(['Software', 'Engineer', 'Student']), 8000))
-    ref.current.push(setTimeout(() => set(['Frontend', 'Software', 'Engineer']), 11000))
-    ref.current.push(setTimeout(() => set(['Backend', 'Software', 'Engineer']), 14000))
-    ref.current.push(setTimeout(() => set(['Alex Pham']), 17000))
+    ref.current.push(setTimeout(() => set(['Student']), 11000))
+    ref.current.push(setTimeout(() => set(['Alex Pham']), 14000))
   }, [])
 
   useEffect(() => void reset(), [])

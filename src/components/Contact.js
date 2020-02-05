@@ -118,7 +118,8 @@ export default class MyForm extends React.Component {
                                         </div>
                                         <div className="contact-information">
                                             <p>Want to get in touch? Questions on my projects?
-                                            Need someone to talk to? Please <b>do</b> contact me through here.
+                                            Job recruitment? Need someone to talk to? 
+                                            Please <b>do</b> contact me through here.
                                             <br /><br />Have the latest and greatest cryptocurrency? Single ladies in my area?
                                             Nigerian prince? Please <b>do not</b> contact me.</p>
                                             <div className="contact-socials">
