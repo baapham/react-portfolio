@@ -79,6 +79,10 @@
         margin: $s-size;
         padding: $s-size;
     }
+    label {
+        margin: 0 $s-size;
+        // padding: $s-size;
+    }
 }
 
 
@@ -108,11 +112,11 @@
     height: 40%;
     position: relative;
     top: 0;
-    transition: top 0.5s, box-shadow 0.5s;
-    &:hover {
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
-        top: -10px;
-    }
+    // transition: top 0.5s, box-shadow 0.5s;
+    // &:hover {
+    //     box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+    //     top: -10px;
+    // }
     // max-width: 20%;
     // max-height: 20%;
 }

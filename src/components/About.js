@@ -9,14 +9,14 @@ const About = (props) => (
                         <h1>About Me</h1>
                     </div>
                     <h3><i>Hi, I'm Alex</i></h3>
-                    <p>I currently am in my 3rd year of university (UNSW) studying a double degree of Computer Science and Commerce (Finance).
+                    <p>I am currently in my 3rd year of university (UNSW) studying a double degree of Computer Science and Commerce (Finance).
                         In real life, I like to fiddle a lot, from shaking my leg to tapping my fingers - you name it, I do it. Does that make me annoying?
                         <b> Maybe.</b> I tried to make the most out of this habit by crafting an interactive portfolio website that you (and I) can fiddle with - play with the background, swing your mouse around,
                         do whatever your heart desires!
                     </p>
                     <h3><i>Where I'm From</i></h3>
-                    <p>I am a Vietnamese Australian born in <b>Sydney</b> and was first exposed to computers at an early age through flash games. My love of programming only really started
-                    at the age 12 when <b>Minecraft</b> was released, it introduced me to the basics of server hosting and Java. From here it only grew stronger when I went on to play <b>Call of Duty: Modern Warfare</b> - I was able to 
+                    <p>I am a Australian-Vietnamese born in <b>Sydney</b> and was first exposed to computers at an early age through flash games. My love of programming only really started
+                    at the age 12 when <b>Minecraft</b> was released, it introduced me to the basics of server hosting and Java. This love only grew stronger when I went on to play <b>Call of Duty: Modern Warfare</b> - I was able to 
                     help host one of the biggest Australian servers at that time (to be fair there were only about 5 Aussie servers) and develop websites for my gaming clans.
                     After this, in Year 10 I competed in a <b>Python Coding Competition</b> and enjoyed it so much I decided to put my self a few thousand in debt and get a Computer Science degree.
                     </p>

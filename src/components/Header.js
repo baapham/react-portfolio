@@ -77,7 +77,7 @@ class Header extends React.Component {
                 <div className="content-container">
                     <div className = "header-container">
                         <button onClick={this.scrollToTop} className={this.state.currentScrollHeight > 100 ? "button-logo-moving" : "button-logo-top"}>AP</button>
-                        <div className="header__links">
+                        <nav className="header__links">
                             <button 
                             className={this.state.currentScrollHeight > 100 
                             ? "button-subtitle-moving" 
@@ -119,7 +119,7 @@ class Header extends React.Component {
                                     duration= {500}
                                 >Contact</Link>
                             </button>
-                        </div>
+                        </nav>
                     </div>
                 </div>
             </header>

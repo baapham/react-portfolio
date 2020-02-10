@@ -110,9 +110,12 @@ export default class MyForm extends React.Component {
                                     </div>
                                     <div className="contact-form-container">
                                         <div className="contact-input" >
-                                            <input type="text" name="name" placeholder=" Your name" />
-                                            <input type="email" name="email" placeholder=" Your email" />
-                                            <textarea name="message" placeholder=" Your message" className="message"></textarea>
+                                            <label>Your name:</label>
+                                            <input type="text" name="name" placeholder=" Enter your name" />
+                                            <label>Your email:</label>
+                                            <input type="email" name="email" placeholder=" Enter your email" />
+                                            <label>Your message:</label>
+                                            <textarea name="message" placeholder=" Enter your message" className="message"></textarea>
                                             {status === "SUCCESS" ? <p>Thanks! I'll get back to you as soon as possible.</p> : <button className="submit-button">Submit</button>}
                                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                                         </div>
