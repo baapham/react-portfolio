@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-159039430-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-159039430-1");
+    </script>
+
     <meta charset="utf-8" />
     <!--  Some icons (sun) made by Freepik from www.flaticon.com  -->
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
@@ -28,11 +43,18 @@
     <title>Alex Pham</title>
   </head>
   <body>
-    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <div class="loader" style="align-items: center; display: flex; height: 100vh; justify-content: center; width: 100vw;">
-        <img alt="loading" src="./loading.gif" class="loader__image" style="height: 10rem; width: 10rem;"/>
+      <div
+        class="loader"
+        style="align-items: center; display: flex; height: 100vh; justify-content: center; width: 100vw;"
+      >
+        <img
+          alt="loading"
+          src="./loading.gif"
+          class="loader__image"
+          style="height: 10rem; width: 10rem;"
+        />
       </div>
     </div>
   </body>
