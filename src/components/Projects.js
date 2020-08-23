@@ -6,7 +6,7 @@ import ReactPortfolio from "../images/ReactPortfolio.png";
 import Countdown from "../images/countdown.png";
 import ywk from "../images/ywk.png";
 // represents the whole entire projects section
-const Projects = props => (
+const Projects = (props) => (
   <div className="projects">
     <div className="projects-main">
       <div className="content-container">
@@ -93,7 +93,7 @@ const Projects = props => (
                         </ul>
                         <h3 class="modal-subtitle">Links</h3>
                         <p>
-                        <a href="https://accessgesss.com/" class="demo">Demo</a>
+                        <a href="https://accessgesss.com/" class="demo">Demo (no longer available)</a>
                         </p>
                         <h3 class="modal-subtitle">Technology</h3>
                         <ul class="technology">
