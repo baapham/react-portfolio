@@ -12,7 +12,7 @@ const About = (props) => (
             <i>Hi, I'm Alex</i>
           </h3>
           <p>
-            I am currently in my 3rd year of university (UNSW) studying a double
+            I am currently in my 4th year of university (UNSW) studying a double
             degree of Computer Science and Commerce (Finance). In real life, I
             like to fiddle a lot, from shaking my leg to tapping my fingers -
             you name it, I do it. Does that make me annoying?
